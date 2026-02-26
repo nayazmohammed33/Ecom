@@ -42,25 +42,16 @@ function App() {
       <NavbarComponent />
       <h1>The Generics</h1>
       <div className="products-container">
-        {/* {productsArr.map((product, index) => (
+        {productsArr.map((product, index) => (
           <div key={index} className="product-card">
             <img src={product.imageUrl} alt={product.title} className="product-image" />
             <h2>{product.title}</h2>
             <p>${product.price}</p>
             <Button variant="primary">Add to Cart</Button>
           </div>
-        ))} */}
+        ))}
 
-        {
-          productsArr.map((product,index)=>(
-            <div key={index} className="product-card">
-              <h2>{product.title}</h2>
-            <img src={product.imageUrl} alt={product.title} className="product-image"/>
-            <p>${product.price}</p>
-            <Button variant="primary">Add to cart</Button>
-              </div>
-          ))
-        }
+        
       </div>
     </div>
   );
