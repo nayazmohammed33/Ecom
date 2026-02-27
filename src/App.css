@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+
+.App h1 {
+  text-align: center;
+  height: 20vh;
+  background-color: gray;
+  padding-top: 60px;
+  font-size: 3.5rem; /* bigger */
+}

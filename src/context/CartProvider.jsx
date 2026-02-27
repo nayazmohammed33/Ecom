@@ -5,6 +5,11 @@ const CartProvider = ({children}) => {
     const [cartitems,setCartItems] = useState([]);
 
   const addToCart=(item)=>{
+    if(cartitems.find(cartitem=>cartitem.id === item.id)){
+      console.log("Item already in cart");
+      alert("Item already in cart");
+      return;
+    }
     setCartItems(preitem=> [...preitem,item]);
     console.log(cartitems);
   }

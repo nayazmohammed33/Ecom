@@ -6,6 +6,8 @@ import CartCard from "../components/CartCard";
 import Cartpage from "../pages/Cartpage";
 import { useCartContext } from "../context/CartContext";
 
+import { Link } from "react-router-dom";
+
 const NavbarComponent = () => {
   const [showCart, setShowCart] = useState(false);
   const {cartitems} = useCartContext();
@@ -70,9 +72,7 @@ const NavbarComponent = () => {
           >
             <ul className="navbar-nav gap-4">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">
-                  Home
-                </a>
+                <Link className="nav-link" to="/">Home</Link>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#">
@@ -80,9 +80,7 @@ const NavbarComponent = () => {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
-                  About
-                </a>
+                 <Link className="nav-link" to="/about">About</Link>
               </li>
             </ul>
           </div>
