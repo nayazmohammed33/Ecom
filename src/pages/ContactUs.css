@@ -1,0 +1,73 @@
+h2 {
+  margin: 0 0 1rem;
+  font-size: 1.4rem;
+  letter-spacing: 0.2rem;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+form {
+  display: grid;
+  gap: 1rem;
+  width: 100%;
+  max-width: 400px; /* fixed width */
+  background: #fff; /* optional: add background */
+  padding: 1.5rem; /* optional: add spacing */
+  border-radius: 8px; /* optional: rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* optional: subtle shadow */
+}
+
+.form-group {
+  display: grid;
+  gap: 0.3rem;
+}
+
+label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--muted);
+}
+
+.req {
+  color: var(--danger);
+  margin-left: 4px;
+}
+
+input,
+textarea {
+  padding: 0.5rem;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: #b7b9c0;
+  outline: none;
+  color: var(--text);
+  font-size: 0.9rem;
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease;
+}
+input:focus,
+textarea:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+}
+
+button[type="submit"] {
+  padding: 0.5rem 1rem;
+
+  border-radius: 10px;
+  background: var(--primary);
+  color: #10241a;
+  font-size: 1.9rem;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+button[disabled] {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
