@@ -1,0 +1,16 @@
+.products-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  grid-template-rows: repeat(2, auto); /* 2 rows */
+  gap: 20px;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+h1 {
+  text-align: center;
+  height: 20vh;
+  background-color: gray;
+  padding-top: 60px;
+  font-size: 3.5rem; /* bigger */
+}

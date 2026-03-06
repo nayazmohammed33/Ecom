@@ -72,7 +72,7 @@ const NavbarComponent = () => {
           >
             <ul className="navbar-nav gap-4">
               <li className="nav-item">
-                <Link className="nav-link" to="/">Home</Link>
+                <Link className="nav-link" to="/products">Home</Link>
               </li>
               <li className="nav-item">
                  <Link className="nav-link" to="/store">Store</Link>
