@@ -30,16 +30,6 @@ export const AuthProvider = ({ children }) => {
     localStorage.setItem("token", token);
     localStorage.setItem("email", email);
 
-    setTimeout(
-      () => {
-        localStorage.removeItem("token");
-        localStorage.removeItem("email");
-        setToken(null);
-        setEmail(null);
-        console.log("Token expired and cleared");
-      },
-      5 * 60 * 1000,
-    );
   };
 
   const logout = () => {
