@@ -8,6 +8,7 @@ import CartProvider from "./context/CartProvider";
 import FooterComponent from "./Ui/FooterComponent";
 import ContactUs from "./pages/ContactUs";
 import ProductDetails from "./pages/ProductDetails";
+import SignIn from "./pages/SignIn";
 
 function App() {
   return (
@@ -17,10 +18,12 @@ function App() {
           <NavbarComponent />
           
           <Routes>
+            <Route path="/"  element={<Products />} />
             <Route path="/products"  element={<Products />} />
             <Route path="/products/:productid" element={<ProductDetails />} />
             <Route path="/about" element={<About />} />
             <Route path="/contactus" element={<ContactUs />} />
+            <Route path="/signin" element={<SignIn />} />
           </Routes>
           <FooterComponent/>
         </Router>

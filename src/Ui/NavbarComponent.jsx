@@ -83,6 +83,9 @@ const NavbarComponent = () => {
               <li className="nav-item">
                 <Link className="nav-link" to="/contactus">Contact-Us</Link>
               </li>
+               <li className="nav-item">
+                <Link className="nav-link" to="/signin">SignIn</Link>
+              </li>
             </ul>
           </div>
 
